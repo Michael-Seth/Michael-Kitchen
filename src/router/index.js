@@ -22,6 +22,7 @@ const routes = [
         path: "/by-name/:name?",
         name: "byName",
         component: MealsByName,
+        props: true
       },
       {
         path: "/by-letter/:letter?",

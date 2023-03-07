@@ -3,12 +3,13 @@
     <MealItem v-for="meal of meals" :key="meal.idMeal" :meal="meal" />
   </div>
   <div v-if="!meals.length" class="flex justify-center text-gray-600 p-8">
-    There are no meals
+    <loading />
   </div>
 </template>
 
 <script setup>
 import MealItem from './MealItem.vue';
+import Loading from './Loading.vue';
 
 const { meals } = defineProps({
   meals: {

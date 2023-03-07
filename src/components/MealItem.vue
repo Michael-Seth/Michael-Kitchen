@@ -1,8 +1,8 @@
 <template>
   <div class="mx-auto my-10 grid max-w-screen-xl gap-y-8  ">
-    <div class="group cursor mx-4 overflow-hidden rounded-2xl bg-white shadow duration-200 hover:-translate-y-4">
+    <div class="group cursor mx-4 overflow-hidden rounded-xl bg-white shadow duration-200 hover:-translate-y-4">
       <router-link :to="{ name: 'mealDetails', params: { id: meal.idMeal } }"
-        class="flex h-40 flex-col justify-between overflow-hidden">
+        class="flex h-48 flex-col justify-between overflow-hidden">
         <img :src="meal.strMealThumb" :alt="meal.strMeal"
           class="group-hover:scale-110 h-full w-full object-cover duration-200" />
       </router-link>
